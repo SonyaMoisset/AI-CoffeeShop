@@ -19,7 +19,7 @@ public class SearchRepository {
     DataSource dataSource;
 
     public List<Product> searchProduct (String input) {
-        // lowercase the input
+        // lowercase the input 
         var lowerInput = input.toLowerCase(Locale.ROOT);
 
         // create a native query to search for products
