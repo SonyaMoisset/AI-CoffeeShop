@@ -24,7 +24,7 @@ public class HomeController {
     @GetMapping({"/", "/index", "/home"})
     public String homePage(Model model) {
         model.addAttribute("products", productService.getAllProducts());
-        return "index";
+        return "index"; 
     }
 
     @PostMapping("/")
